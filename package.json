@@ -10,5 +10,8 @@
     "build": "npm run validate && python3 scripts/build.py",
     "research:recompute": "python3 scripts/economy_recompute.py"
   },
-  "devDependencies": {"@playwright/test": "1.61.1"}
+  "devDependencies": {
+    "@playwright/test": "1.61.1",
+    "prettier": "3.6.2"
+  }
 }

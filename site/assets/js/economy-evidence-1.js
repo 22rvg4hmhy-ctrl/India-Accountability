@@ -1,2 +1,331 @@
-
-const comps=[{"id": "FDI", "cat": "Manufacturing & investment", "title": "Total gross foreign investment inflows", "before": 36.05, "after": 81.04, "unit": "USD billion", "period": "FY2013–14 → FY2024–25", "method": "percent_change", "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2131716&lang=1&reg=1", "kind": "official", "caution": "Provisional last period; gross inflows, not net FDI. No causal attribution to one government.", "change": 124.8}, {"id": "POVERTY", "cat": "Poverty & inequality", "title": "Extreme poverty, legacy $2.15 line (2017 PPP)", "before": 16.2, "after": 2.3, "unit": "% population", "period": "2011–12 → 2022–23", "method": "pp_change", "source": "https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines", "kind": "independent", "caution": "World Bank harmonized historical 2011–12 MMRP survey; do not mix with newer 2021 PPP poverty line. Pre-2014 to post-2014 comparison is not attribution.", "change": -13.9}, {"id": "RURAL_REAL", "cat": "Household prosperity", "title": "Rural monthly real consumption per person", "before": 1430, "after": 2079, "unit": "₹ at 2011–12 prices", "period": "2011–12 → 2023–24", "method": "percent_change", "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2150425&lang=2&reg=48", "kind": "official", "caution": "HCES method differs between older and newer surveys; cross-period comparability cannot be treated as exact.", "change": 45.38}, {"id": "URBAN_REAL", "cat": "Household prosperity", "title": "Urban monthly real consumption per person", "before": 2630, "after": 3632, "unit": "₹ at 2011–12 prices", "period": "2011–12 → 2023–24", "method": "percent_change", "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2150425&lang=2&reg=48", "kind": "official", "caution": "HCES method differs between rounds, so this is indicative rather than fully harmonised.", "change": 38.1}, {"id": "RURAL_NOMINAL", "cat": "Household prosperity", "title": "Rural monthly nominal consumption per person", "before": 3773, "after": 4122, "unit": "₹ current prices", "period": "2022–23 → 2023–24", "method": "percent_change", "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2150425&lang=2&reg=48", "kind": "official", "caution": "Current-price comparison, not real spending power.", "change": 9.25}, {"id": "URBAN_NOMINAL", "cat": "Household prosperity", "title": "Urban monthly nominal consumption per person", "before": 6459, "after": 6996, "unit": "₹ current prices", "period": "2022–23 → 2023–24", "method": "percent_change", "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2150425&lang=2&reg=48", "kind": "official", "caution": "Current-price comparison, not real spending power.", "change": 8.31}, {"id": "CPI_SEP", "cat": "Inflation & cost of living", "title": "Headline CPI inflation (revised base)", "before": 4.83, "after": 5.54, "unit": "% YoY", "period": "August 2026 → September 2026", "method": "pp_change", "source": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2322244&lang=2&reg=48", "kind": "official", "caution": "September provisional, August final; 2024=100 CPI; monthly change in annual inflation rates, not change in CPI price level.", "change": 0.71}, {"id": "FOOD_SEP", "cat": "Inflation & cost of living", "title": "Food inflation (revised base)", "before": 5.97, "after": 7.74, "unit": "% YoY", "period": "August 2026 → September 2026", "method": "pp_change", "source": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2322244&lang=2&reg=48", "kind": "official", "caution": "September provisional, August final; 2024=100 base; this is monthly change in year-on-year food inflation.", "change": 1.77}];const promises=[{"id": "", "title": "Create a Price Stabilisation Fund", "year": "2014", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Introduce stronger anti-hoarding measures and special courts", "year": "2014", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Reorganise Food Corporation of India procurement, storage and distribution", "year": "2014", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Provide farmers real-time information about produce prices and stocks", "year": "2014", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Create a single National Agriculture Market", "year": "2014", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Support locally suitable crop and vegetable cultivation", "year": "2014", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Provide piped water connection to every household by 2024", "year": "2019", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Reach US$5 trillion nominal GDP by 2025", "year": "2019", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Reach US$10 trillion nominal GDP by 2032", "year": "2019", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Become the world’s third-largest economy by 2030", "year": "2019", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Mobilise ₹100 lakh crore for infrastructure investment by 2024", "year": "2019", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Continue simplifying the Goods and Services Tax system", "year": "2019", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Move India into top 50 of World Bank Doing Business ranking", "year": "2019", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Introduce a new industrial policy", "year": "2019", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Amend Companies Act for civil treatment of minor technical violations", "year": "2019", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Continue free food-grain support for eligible households for five years", "year": "2024", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Expand action to stabilise prices of pulses, vegetables and edible oils", "year": "2024", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Expand PM Awas Yojana access for poor families", "year": "2024", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Work towards India becoming the third-largest economy", "year": "2024", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Maintain macroeconomic stability, including growth and inflation", "year": "2024", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Promote exports and simplify commercial and tax law", "year": "2024", "status": "unreviewed", "publication": "NO"}, {"id": "", "title": "Strengthen manufacturing and production-linked incentive programmes", "year": "2024", "status": "unreviewed", "publication": "NO"}];const cats=['All',...new Set(comps.map(c=>c.cat))];let cat='All';const byId=id=>document.getElementById(id);function render(){byId('cats').innerHTML=cats.map(c=>`<button class="${c===cat?'active':''}" data-c="${c}">${c}</button>`).join('');document.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>{cat=b.dataset.c;render()});byId('metrics').innerHTML=comps.filter(c=>cat==='All'||c.cat===cat).map(c=>`<article class="card metric"><div class="eyebrow">${c.cat}</div><h3>${c.title}</h3><div class="change">${c.change>0?'+':''}${c.change}${c.method==='pp_change'?' pp':'%'}</div><div class="micro">${c.period} · ${c.unit}</div><div class="bars"><i style="width:${Math.max(5,100*c.before/Math.max(c.before,c.after))}%"></i><i style="width:${Math.max(5,100*c.after/Math.max(c.before,c.after))}%"></i></div><p><b>${c.before}</b> → <b>${c.after}</b></p><p class="micro">${c.caution}</p><a target="_blank" rel="noopener" href="${c.source}">Original source ↗</a></article>`).join('')};render();function drawP(){const q=byId('search').value.toLowerCase();const rows=promises.filter(p=>(p.id+' '+p.title+' '+p.year).toLowerCase().includes(q));byId('promises').innerHTML=rows.map(p=>`<div class="promise"><b>${p.title||p.id}</b><br><small>${p.id} · ${p.year} · ${p.status} · Publication ready: ${p.publication}</small></div>`).join('')||'No matching commitments.'}byId('search').addEventListener('input',drawP);drawP();
+const comps = [
+  {
+    id: "FDI",
+    cat: "Manufacturing & investment",
+    title: "Total gross foreign investment inflows",
+    before: 36.05,
+    after: 81.04,
+    unit: "USD billion",
+    period: "FY2013–14 → FY2024–25",
+    method: "percent_change",
+    source:
+      "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2131716&lang=1&reg=1",
+    kind: "official",
+    caution:
+      "Provisional last period; gross inflows, not net FDI. No causal attribution to one government.",
+    change: 124.8,
+  },
+  {
+    id: "POVERTY",
+    cat: "Poverty & inequality",
+    title: "Extreme poverty, legacy $2.15 line (2017 PPP)",
+    before: 16.2,
+    after: 2.3,
+    unit: "% population",
+    period: "2011–12 → 2022–23",
+    method: "pp_change",
+    source:
+      "https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines",
+    kind: "independent",
+    caution:
+      "World Bank harmonized historical 2011–12 MMRP survey; do not mix with newer 2021 PPP poverty line. Pre-2014 to post-2014 comparison is not attribution.",
+    change: -13.9,
+  },
+  {
+    id: "RURAL_REAL",
+    cat: "Household prosperity",
+    title: "Rural monthly real consumption per person",
+    before: 1430,
+    after: 2079,
+    unit: "₹ at 2011–12 prices",
+    period: "2011–12 → 2023–24",
+    method: "percent_change",
+    source:
+      "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2150425&lang=2&reg=48",
+    kind: "official",
+    caution:
+      "HCES method differs between older and newer surveys; cross-period comparability cannot be treated as exact.",
+    change: 45.38,
+  },
+  {
+    id: "URBAN_REAL",
+    cat: "Household prosperity",
+    title: "Urban monthly real consumption per person",
+    before: 2630,
+    after: 3632,
+    unit: "₹ at 2011–12 prices",
+    period: "2011–12 → 2023–24",
+    method: "percent_change",
+    source:
+      "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2150425&lang=2&reg=48",
+    kind: "official",
+    caution:
+      "HCES method differs between rounds, so this is indicative rather than fully harmonised.",
+    change: 38.1,
+  },
+  {
+    id: "RURAL_NOMINAL",
+    cat: "Household prosperity",
+    title: "Rural monthly nominal consumption per person",
+    before: 3773,
+    after: 4122,
+    unit: "₹ current prices",
+    period: "2022–23 → 2023–24",
+    method: "percent_change",
+    source:
+      "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2150425&lang=2&reg=48",
+    kind: "official",
+    caution: "Current-price comparison, not real spending power.",
+    change: 9.25,
+  },
+  {
+    id: "URBAN_NOMINAL",
+    cat: "Household prosperity",
+    title: "Urban monthly nominal consumption per person",
+    before: 6459,
+    after: 6996,
+    unit: "₹ current prices",
+    period: "2022–23 → 2023–24",
+    method: "percent_change",
+    source:
+      "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2150425&lang=2&reg=48",
+    kind: "official",
+    caution: "Current-price comparison, not real spending power.",
+    change: 8.31,
+  },
+  {
+    id: "CPI_SEP",
+    cat: "Inflation & cost of living",
+    title: "Headline CPI inflation (revised base)",
+    before: 4.83,
+    after: 5.54,
+    unit: "% YoY",
+    period: "August 2026 → September 2026",
+    method: "pp_change",
+    source:
+      "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2322244&lang=2&reg=48",
+    kind: "official",
+    caution:
+      "September provisional, August final; 2024=100 CPI; monthly change in annual inflation rates, not change in CPI price level.",
+    change: 0.71,
+  },
+  {
+    id: "FOOD_SEP",
+    cat: "Inflation & cost of living",
+    title: "Food inflation (revised base)",
+    before: 5.97,
+    after: 7.74,
+    unit: "% YoY",
+    period: "August 2026 → September 2026",
+    method: "pp_change",
+    source:
+      "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2322244&lang=2&reg=48",
+    kind: "official",
+    caution:
+      "September provisional, August final; 2024=100 base; this is monthly change in year-on-year food inflation.",
+    change: 1.77,
+  },
+];
+const promises = [
+  {
+    id: "",
+    title: "Create a Price Stabilisation Fund",
+    year: "2014",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Introduce stronger anti-hoarding measures and special courts",
+    year: "2014",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title:
+      "Reorganise Food Corporation of India procurement, storage and distribution",
+    year: "2014",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title:
+      "Provide farmers real-time information about produce prices and stocks",
+    year: "2014",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Create a single National Agriculture Market",
+    year: "2014",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Support locally suitable crop and vegetable cultivation",
+    year: "2014",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Provide piped water connection to every household by 2024",
+    year: "2019",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Reach US$5 trillion nominal GDP by 2025",
+    year: "2019",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Reach US$10 trillion nominal GDP by 2032",
+    year: "2019",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Become the world’s third-largest economy by 2030",
+    year: "2019",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Mobilise ₹100 lakh crore for infrastructure investment by 2024",
+    year: "2019",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Continue simplifying the Goods and Services Tax system",
+    year: "2019",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Move India into top 50 of World Bank Doing Business ranking",
+    year: "2019",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Introduce a new industrial policy",
+    year: "2019",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title:
+      "Amend Companies Act for civil treatment of minor technical violations",
+    year: "2019",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title:
+      "Continue free food-grain support for eligible households for five years",
+    year: "2024",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title:
+      "Expand action to stabilise prices of pulses, vegetables and edible oils",
+    year: "2024",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Expand PM Awas Yojana access for poor families",
+    year: "2024",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Work towards India becoming the third-largest economy",
+    year: "2024",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Maintain macroeconomic stability, including growth and inflation",
+    year: "2024",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title: "Promote exports and simplify commercial and tax law",
+    year: "2024",
+    status: "unreviewed",
+    publication: "NO",
+  },
+  {
+    id: "",
+    title:
+      "Strengthen manufacturing and production-linked incentive programmes",
+    year: "2024",
+    status: "unreviewed",
+    publication: "NO",
+  },
+];
+const cats = ["All", ...new Set(comps.map((c) => c.cat))];
+let cat = "All";
+const byId = (id) => document.getElementById(id);
+function render() {
+  byId("cats").innerHTML = cats
+    .map(
+      (c) =>
+        `<button class="${c === cat ? "active" : ""}" data-c="${c}">${c}</button>`,
+    )
+    .join("");
+  document.querySelectorAll("[data-c]").forEach(
+    (b) =>
+      (b.onclick = () => {
+        cat = b.dataset.c;
+        render();
+      }),
+  );
+  byId("metrics").innerHTML = comps
+    .filter((c) => cat === "All" || c.cat === cat)
+    .map(
+      (c) =>
+        `<article class="card metric"><div class="eyebrow">${c.cat}</div><h3>${c.title}</h3><div class="change">${c.change > 0 ? "+" : ""}${c.change}${c.method === "pp_change" ? " pp" : "%"}</div><div class="micro">${c.period} · ${c.unit}</div><div class="bars"><i style="width:${Math.max(5, (100 * c.before) / Math.max(c.before, c.after))}%"></i><i style="width:${Math.max(5, (100 * c.after) / Math.max(c.before, c.after))}%"></i></div><p><b>${c.before}</b> → <b>${c.after}</b></p><p class="micro">${c.caution}</p><a target="_blank" rel="noopener" href="${c.source}">Original source ↗</a></article>`,
+    )
+    .join("");
+}
+render();
+function drawP() {
+  const q = byId("search").value.toLowerCase();
+  const rows = promises.filter((p) =>
+    (p.id + " " + p.title + " " + p.year).toLowerCase().includes(q),
+  );
+  byId("promises").innerHTML =
+    rows
+      .map(
+        (p) =>
+          `<div class="promise"><b>${p.title || p.id}</b><br><small>${p.id} · ${p.year} · ${p.status} · Publication ready: ${p.publication}</small></div>`,
+      )
+      .join("") || "No matching commitments.";
+}
+byId("search").addEventListener("input", drawP);
+drawP();
