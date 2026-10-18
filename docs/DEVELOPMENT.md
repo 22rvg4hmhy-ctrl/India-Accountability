@@ -47,3 +47,11 @@ TEST_PRODUCTION=1 TEST_BASE_URL=http://127.0.0.1:4173/India-Accountability/ CHRO
 ```
 
 The test runner starts its own server. Stop another process using port 4173 first. CI uses Playwright's Chromium; mobile tests emulate a viewport and touch, not a physical iPhone or Safari.
+
+## Interactive UI
+
+`ResearchSpotlight` previews each policy area's first published indicator using the canonical records. Empty categories must show a pending state rather than sample or invented values. The spotlight is labelled as a research snapshot, never a live feed.
+
+`TrendChart` shares its selected observation across the crosshair, exact-value readout and labelled range input. Pointer/touch interaction and keyboard Home/End/arrow keys must produce the same source values. Keep the observation table and download available. Do not use movement or colour to imply causal attribution or a government rating.
+
+Interaction styling lives in `src/styles/interactions.css`, loaded after the base styles. Honour `prefers-reduced-motion` for page transitions, chart drawing and automatic subject scrolling. Test both desktop and mobile behavior when changing these controls. The exhaustive all-indicator browser scenario has a larger time budget because it traverses all chart modes and their transitions.

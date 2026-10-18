@@ -51,6 +51,8 @@ for (const category of ["economy", "employment", "democracy"]) {
     page,
     request,
   }) => {
+    // This scenario traverses every indicator and chart mode, including visual transitions.
+    test.setTimeout(90_000);
     const errors = errorsFor(page);
     await page.goto(`./?view=${category}`);
     for (const topic of data.topics.filter((t) => t.category === category)) {
@@ -184,4 +186,106 @@ test("downloaded indicator CSV equals the observations driving the chart", async
       .filter((o) => o.indicatorId === "nominal-gdp")
       .map((o) => [o.period, o.value]),
   );
+});
+
+test("spotlight switches policy areas and keeps research gaps explicit", async ({
+  page,
+}) => {
+  await page.goto("./");
+  const spotlight = page.getByRole("region", { name: "Research spotlight" });
+  await spotlight
+    .getByRole("button", { name: "Employment", exact: true })
+    .click();
+  await expect(
+    spotlight.getByRole("button", { name: "Employment", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await expect(spotlight.locator("h2")).toHaveText("Unemployment rate");
+  await spotlight
+    .getByRole("button", { name: "Education", exact: true })
+    .click();
+  await expect(spotlight).toContainText("Evidence review pending");
+  await expect(spotlight.locator(".trend-chart")).toHaveCount(0);
+  await spotlight.getByRole("button", { name: "Economy", exact: true }).click();
+  await spotlight.getByRole("link", { name: "Explore this evidence" }).click();
+  await expect(page).toHaveURL(
+    /view=economy&topic=growth&indicator=nominal-gdp/,
+  );
+  await expect(page.locator(".indicator-explorer h3")).toHaveText(
+    "GDP in current US dollars",
+  );
+});
+
+test("chart supports keyboard and pointer exploration of exact source values", async ({
+  page,
+}, testInfo) => {
+  await page.goto("./?view=economy&topic=growth&indicator=nominal-gdp");
+  const chart = page.locator(".interactive-chart");
+  const slider = chart.getByLabel("Explore observations");
+  const rows = data.observations.filter((o) => o.indicatorId === "nominal-gdp");
+  await slider.focus();
+  await slider.press("Home");
+  await expect(slider).toHaveValue("0");
+  await expect(chart.locator(".chart-readout")).toContainText(rows[0].period);
+  await slider.press("ArrowRight");
+  await expect(slider).toHaveValue("1");
+  await expect(slider).toHaveAttribute(
+    "aria-valuetext",
+    new RegExp(rows[1].period),
+  );
+  await slider.press("End");
+  await expect(slider).toHaveValue(String(rows.length - 1));
+  const svg = chart.locator("svg");
+  const bounds = await svg.boundingBox();
+  const position = { x: (bounds.width * 66) / 760, y: bounds.height / 2 };
+  if (testInfo.project.name === "mobile") await svg.tap({ position });
+  else await svg.click({ position });
+  await expect(slider).toHaveValue("0");
+  await expect(chart.locator(".chart-readout")).toContainText(
+    String(rows[0].value),
+  );
+});
+
+test("subject search and data filter preserve pending research", async ({
+  page,
+}) => {
+  await page.goto("./?view=employment");
+  await expect(page.locator(".topic-card")).toHaveCount(6);
+  await page
+    .getByRole("button", { name: "With published data", exact: true })
+    .click();
+  const published = data.topics.filter(
+    (t) =>
+      t.category === "employment" &&
+      data.indicators.some(
+        (i) => i.category === "employment" && i.topic === t.id,
+      ),
+  );
+  await expect(page.locator(".topic-card")).toHaveCount(published.length);
+  await page.getByLabel("Find a subject").fill("no-such-subject");
+  await expect(page.locator(".topic-card")).toHaveCount(0);
+  await page.getByRole("button", { name: "Reset filters" }).click();
+  await expect(page.locator(".topic-card")).toHaveCount(6);
+  await page.getByLabel("Find a subject").fill("Youth");
+  await expect(page.locator(".topic-card")).toHaveCount(1);
+  await page.locator(".topic-card").click();
+  await expect(
+    page.getByRole("heading", { name: "Evidence review in progress" }),
+  ).toBeVisible();
+});
+
+test("reduced motion disables decorative transitions while interactions still work", async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("./");
+  const spotlight = page.getByRole("region", { name: "Research spotlight" });
+  await spotlight
+    .getByRole("button", { name: "Democracy", exact: true })
+    .click();
+  expect(
+    await spotlight
+      .locator(".spotlight-content")
+      .evaluate((el) => getComputedStyle(el).animationName),
+  ).toBe("none");
+  await expect(spotlight.locator("h2")).toContainText("Freedom House");
 });

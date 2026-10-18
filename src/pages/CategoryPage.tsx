@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import { ResearchIcon } from "../components/ResearchIcon";
 import { ExternalArrow } from "../components/ResearchIcon";
 import type { Category } from "../types/research";
@@ -13,7 +14,30 @@ export function CategoryPage({
   category: Category;
   params: URLSearchParams;
 }) {
+  const [search, setSearch] = useState("");
+  const [withData, setWithData] = useState(false);
+  const workspaceRef = useRef<HTMLElement>(null);
+  const selectedTopicId = params.get("topic");
+  useEffect(() => {
+    if (selectedTopicId)
+      workspaceRef.current?.scrollIntoView({
+        block: "start",
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "instant"
+          : "smooth",
+      });
+  }, [selectedTopicId]);
   const topics = research.topics.filter((t) => t.category === category.id);
+  const visibleTopics = topics.filter(
+    (t) =>
+      (!withData ||
+        research.indicators.some(
+          (i) => i.category === category.id && i.topic === t.id,
+        )) &&
+      `${t.name} ${t.description}`
+        .toLowerCase()
+        .includes(search.trim().toLowerCase()),
+  );
   const topic = topics.find((t) => t.id === params.get("topic"));
   const indicators = topic
     ? research.indicators.filter(
@@ -60,19 +84,63 @@ export function CategoryPage({
       </header>
       {topics.length ? (
         <>
+          <div className="subject-toolbar">
+            <label className="subject-search">
+              Find a subject
+              <input
+                type="search"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Search research subjects…"
+              />
+            </label>
+            <button
+              className="filter-toggle"
+              aria-pressed={withData}
+              onClick={() => setWithData((v) => !v)}
+            >
+              With published data
+            </button>
+            <span role="status">
+              {visibleTopics.length} of {topics.length} subjects
+            </span>
+            {(search || withData) && (
+              <button
+                className="text-button"
+                onClick={() => {
+                  setSearch("");
+                  setWithData(false);
+                }}
+              >
+                Reset filters
+              </button>
+            )}
+          </div>
+          {visibleTopics.length === 0 && (
+            <p className="selection-prompt">
+              No subjects match these filters. Try a different search or reset
+              the filters.
+            </p>
+          )}
           <section className="topic-grid" aria-label="Research subjects">
-            {topics.map((t, i) => (
+            {visibleTopics.map((t) => (
               <AppLink
                 key={t.id}
                 className={`topic-card ${topic?.id === t.id ? "selected" : ""}`}
                 href={href(t.id)}
                 aria-current={topic?.id === t.id ? "true" : undefined}
               >
-                <span className="card-number">0{i + 1}</span>
+                <span className="card-number">0{topics.indexOf(t) + 1}</span>
                 <span className="topic-icon">
                   <ResearchIcon category={category.id} />
                 </span>
                 <strong>{t.name}</strong>
+                <span className="topic-availability">
+                  {research.indicators.filter(
+                    (i) => i.category === category.id && i.topic === t.id,
+                  ).length || "No"}{" "}
+                  published series
+                </span>
                 <span className="card-action">Explore →</span>
               </AppLink>
             ))}
@@ -84,6 +152,7 @@ export function CategoryPage({
           )}
           {topic && (
             <section
+              ref={workspaceRef}
               className="workspace"
               aria-label={`${topic.name} research`}
             >

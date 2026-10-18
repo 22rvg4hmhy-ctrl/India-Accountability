@@ -1,3 +1,4 @@
+import { ResearchSpotlight } from "../components/ResearchSpotlight";
 import { ResearchIcon } from "../components/ResearchIcon";
 import { ExternalArrow } from "../components/ResearchIcon";
 import { research, asset } from "../lib/research";
@@ -5,18 +6,36 @@ import { AppLink } from "../lib/navigation";
 export function Home() {
   return (
     <div className="home">
-      <section className="hero">
-        <div className="eyebrow">Independent research · India · 2014–2026</div>
-        <h1>
-          Promises.
-          <br />
-          Performance. <em>Evidence.</em>
-        </h1>
-        <p>
-          Explore what was promised, what changed, and what the available
-          evidence can actually tell us.
-        </p>
-      </section>
+      <div className="hero-layout">
+        <section className="hero">
+          <div className="eyebrow">
+            Independent research · India · 2014–2026
+          </div>
+          <h1>
+            Promises.
+            <br />
+            Performance. <em>Evidence.</em>
+          </h1>
+          <p>
+            Explore what was promised, what changed, and what the available
+            evidence can actually tell us.
+          </p>
+          <div className="hero-actions">
+            <AppLink className="primary-button" href={asset("?view=economy")}>
+              Start exploring <ExternalArrow />
+            </AppLink>
+            <AppLink className="secondary-button" href={asset("?view=audit")}>
+              Browse promises
+            </AppLink>
+          </div>
+          <div className="hero-trust">
+            <span>Source-linked</span>
+            <span>Methods included</span>
+            <span>Open research</span>
+          </div>
+        </section>
+        <ResearchSpotlight />
+      </div>
       <section className="research-banner">
         <div>
           <span className="section-label">
@@ -68,6 +87,22 @@ export function Home() {
             </span>
             <h3>{category.name}</h3>
             <p>{category.description}</p>
+            <div className="coverage-preview">
+              <span>
+                {
+                  research.indicators.filter((i) => i.category === category.id)
+                    .length
+                }{" "}
+                indicators
+              </span>
+              <span>
+                {
+                  research.topics.filter((t) => t.category === category.id)
+                    .length
+                }{" "}
+                subjects
+              </span>
+            </div>
             <span className="card-action">
               Explore the evidence <ExternalArrow />
             </span>

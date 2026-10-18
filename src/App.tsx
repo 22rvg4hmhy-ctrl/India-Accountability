@@ -54,7 +54,7 @@ export function App() {
           </div>
         </nav>
       </header>
-      <main id="main" className="shell">
+      <main id="main" className="shell" key={view}>
         {view === "home" ? (
           <Home />
         ) : category ? (
