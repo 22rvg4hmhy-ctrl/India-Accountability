@@ -60,6 +60,14 @@ for (const category of ["economy", "employment", "democracy"]) {
         })
         .first()
         .click();
+      const expectedEvidence = data.independent.filter(
+        (row) =>
+          row.category === category &&
+          (category !== "economy" || row.topic === topic.id),
+      );
+      await expect(
+        page.locator(".independent .evidence-grid article"),
+      ).toHaveCount(expectedEvidence.length);
       const indicators = data.indicators.filter(
         (i) => i.category === category && i.topic === topic.id,
       );

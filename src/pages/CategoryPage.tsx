@@ -157,7 +157,10 @@ export function CategoryPage({
                   ))}
                 </section>
               )}
-              <IndependentEvidence category={category.id} topic={topic.id} />
+              <IndependentEvidence
+                category={category.id}
+                topic={category.id === "economy" ? topic.id : undefined}
+              />
               <details className="panel downloads">
                 <summary>Research scope & downloads</summary>
                 <p>

@@ -2,3 +2,7 @@
 archive/** linguist-vendored=true
 public/research-archive.html linguist-vendored=true
 docs/retired-jekyll-workflow.yml linguist-vendored=true
+
+# Preserve imported CSV line endings without reporting CR as trailing whitespace.
+*.csv whitespace=cr-at-eol
+archive/** -whitespace
