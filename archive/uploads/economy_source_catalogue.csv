@@ -1,0 +1,35 @@
+source_id,publisher_or_document,url,used_in_metrics
+manifesto19,BJP 2019 election manifesto · printed p.17,https://library.bjp.org/jspui/bitstream/123456789/2988/1/BJP-Election-english-2019.pdf,
+manifesto14,BJP 2014 election manifesto,https://library.bjp.org/jspui/bitstream/123456789/252/1/bjp_lection_manifesto_english_2014.pdf,
+manifesto24,BJP 2024 manifesto · source registry,https://www.bjp.org/manifesto,
+wbGDP,"World Bank WDI · GDP (current US$), India",https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN,nominal-gdp
+wbPeer,"World Bank WDI · 2025 GDP (current US$), country comparison",https://databank.worldbank.org/reports.aspx?country=IND%2CCOL&series=NY.GDP.MKTP.CD&source=2,
+gdp,MoSPI · September 2026 revisions to GDP 2022–23 base series,https://www.pib.gov.in/PressReleasePage.aspx?PRID=2304948&lang=2&reg=48,real-gdp-growth
+gdpFAQ,MoSPI · national accounts revision and back-series FAQ,https://mospi.gov.in/faq,real-gdp-growth
+cpi,"MoSPI · August 2026 CPI, 2024 base",https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310058&lang=1&reg=48,cpi-headline;cpi-food;cpi-ruralurban
+hces,MoSPI · Household Consumption Expenditure Survey 2023–24,https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2088390&lang=2&reg=48,hces-rural;hces-urban;urban-rural-consumption-gap
+hcespdf,MoSPI · HCES 2023–24 full report (Report 592),https://mospi.gov.in/sites/default/files/publication_reports/Final_Report_HCES_2023-24L.pdf,hces-rural;hces-urban;urban-rural-consumption-gap
+budget,Union Budget 2026–27 · fiscal targets and revised estimates,https://www.pib.gov.in/PressReleasePage.aspx?PRID=2221395&lang=1&reg=3,fiscal-deficit;central-debt
+prs,PRS Legislative Research · Union Budget 2026–27 analysis,https://prsindia.org/budgets/parliament/union-budget-2026-27-analysis,fiscal-deficit
+poverty,"World Bank · India Poverty and Equity Brief, October 2025",https://documents1.worldbank.org/curated/en/099722104222534584/pdf/IDU-25f34333-d3a3-44ae-8268-86830e3bc5a5.pdf,poverty-420;poverty-300;consumption-gini
+povertyMethod,World Bank · June 2025 poverty methods and revision note,https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines,poverty-420;poverty-300
+manu,"MoSPI · Manufacturing GVA share (2022–23 base), Aug 2026",https://www.pib.gov.in/PressReleasePage.aspx?PRID=2298236&lang=1&reg=3,manufacturing-share
+fdi,Ministry of Commerce · FDI inflows FY2024–25,https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2131716&lang=2&reg=48,gross-fdi
+doing,World Bank · Discontinuation of Doing Business reports,https://www.worldbank.org/en/news/statement/2021/09/16/world-bank-group-to-discontinue-doing-business-report,
+wbCPIannual,World Bank / IMF International Financial Statistics · annual CPI,https://api.worldbank.org/v2/country/IND/indicator/FP.CPI.TOTL.ZG?format=json,wdi-inflation-annual;cost-basket-index
+wbGDPannual,World Bank WDI · annual real GDP growth (calendar years),https://api.worldbank.org/v2/country/IND/indicator/NY.GDP.MKTP.KD.ZG?format=json,wdi-gdp-growth
+rbiFiscal,RBI Annual Report 2023–24 · Key Fiscal Indicators table,https://www.rbi.org.in/scripts/AnnualReportPublications.aspx?Id=1421,rbi-fiscal-long;rbi-debt-long
+rbiSavings,RBI Annual Report 2022–23 · Household Financial Savings table,https://www.rbi.org.in/scripts/AnnualReportPublications.aspx?Id=1373,household-financial-saving;household-financial-liabilities
+worldbankIDU26,"World Bank India Development Update, April 2026",https://thedocs.worldbank.org/en/doc/4262e1e15b463ecb360cec4ad78cf062-0310012026/india-development-update-april-2026,wdi-gdp-growth;wb-poverty-2024;wb-poverty-rural-2024;wb-poverty-urban-2024;wb-moderate-poverty-2024
+wbPovertyMethod2025,World Bank June 2025 poverty-lines and HCES harmonisation explanation,https://www.worldbank.org/en/news/factsheet/2025/06/05/june-2025-update-to-global-poverty-lines,wb-poverty-2024;wb-poverty-rural-2024;wb-poverty-urban-2024;wb-moderate-poverty-2024
+wil2026,"World Inequality Lab research, published World Bank Economic Review May 2026",https://doi.org/10.1093/wber/lhag013,wil-top1-wealth;wil-top1-income
+imf2025,IMF 2025 Article IV Consultation · India,https://www.imf.org/en/news/articles/2025/11/24/pr-25392-india-imf-executive-board-concludes-2025-article-iv-consultation,wdi-inflation-annual;rbi-fiscal-long;rbi-debt-long;imf-investment;imf-gross-savings;imf-general-gov-deficit;imf-general-debt
+worldbank2026,"World Bank India Development Update 2026, independent macroeconomic analysis",https://www.worldbank.org/en/news/press-release/2026/04/09/india-remains-among-the-fastest-growing-economies,real-gdp-per-capita
+dpiitFDI,"DPIIT official annual total FDI inflows (gross, not net), May 2025",https://www.pib.gov.in/PressReleasePage.aspx?PRID=2131716&lang=1&reg=1,
+hcesOfficial,Household Consumption Expenditure Survey 2023–24 (MoSPI government release),https://www.pib.gov.in/FactsheetDetails.aspx?ModuleId=16&NoteId=149221&id=149221&lang=2&reg=48,
+commerceFY25,"Ministry of Commerce FY2024–25 trade release, merchandise totals",https://www.pib.gov.in/PressReleasePage.aspx?PRID=2122016&lang=2&reg=3,merchandise-exports;merchandise-trade-deficit
+commerceFY14,Government trade retrospective FY2013–14 merchandise exports; promotional release,https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/jun/doc2025616570701.pdf,merchandise-exports
+unGDPpc,"UNdata / World Bank WDI real GDP per person, PPP 2021 constant dollars",https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3ANY.GDP.PCAP.PP.KD%3BCountry_Code%3AIND,real-gdp-per-capita
+rbi2024budget,RBI 2024: Union fiscal performance table,https://systemhealth.rbi.org.in/Scripts/AnnualReportPublications.aspx_Id%3D1402.html,central-gross-tax-ratio;union-capex-gdp
+mospiManufacturing2026,"MoSPI parliamentary manufacturing GVA series, base 2022–23",https://www.pib.gov.in/PressReleasePage.aspx?PRID=2298236&lang=1&reg=1,manufacturing-real-gva-growth
+prsInterest2024,"PRS analysis of Budget 2024–25, interest burden / revenue receipts",https://prsindia.org/budgets/parliament/union-budget-2024-25-analysis,interest-burden

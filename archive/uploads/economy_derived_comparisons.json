@@ -1,0 +1,14 @@
+{
+  "wdi-gdp-growth": {
+    "pre_2004_2013_mean": 6.8098,
+    "post_2014_2023_mean": 5.9513,
+    "difference_pp": -0.8585,
+    "method": "unweighted arithmetic mean of annual World Bank reported rates; descriptive not causal"
+  },
+  "wdi-inflation-annual": {
+    "pre_2004_2013_mean": 7.9812,
+    "post_2014_2023_mean": 5.162,
+    "difference_pp": -2.8192,
+    "method": "unweighted arithmetic mean of annual World Bank reported rates; descriptive not causal"
+  }
+}

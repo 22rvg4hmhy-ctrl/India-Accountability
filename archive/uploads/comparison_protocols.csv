@@ -1,0 +1,6 @@
+id,measure,before,after,method,status,source
+CMP-01,Total gross FDI inflows,FY2013–14,FY2024–25,Compare recorded source values in legacy numeric observations; do not interpret gross FDI as net FDI or causal impact,limited snapshot comparison; check definition and source vintage,legacy_numeric_observations.csv
+CMP-02,Rural consumption per person,2011–12,2023–24,Do NOT calculate real change from nominal HCES values; survey design changed and price adjustment necessary,not comparable without harmonisation,MoSPI HCES
+CMP-03,Urban consumption per person,2011–12,2023–24,Do NOT calculate real change from nominal HCES values; survey methodology and price adjustment matter,not comparable without harmonisation,MoSPI HCES
+CMP-04,Real GDP growth,2004–2013,2014–2023,Compute arithmetic annual mean from SAME data source vintage and consistent calendar-year series; exclude 2024–2026 until same vintage verified,pending complete validated annual series,World Bank WDI NY.GDP.MKTP.KD.ZG
+CMP-05,Headline CPI inflation,2004–2013,2014–2023,"Use harmonised series, document CPI composition and base breaks, compare annual average rates",pending comparable series,MoSPI / World Bank FP.CPI.TOTL.ZG

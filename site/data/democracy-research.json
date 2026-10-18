@@ -1,0 +1,88 @@
+[
+  {
+    "id": "rights",
+    "name": "Political rights & civil liberties",
+    "icon": "⚖",
+    "question": "How do published rights assessments describe India?",
+    "description": "External indices with methodology notes",
+    "metrics": [
+      {
+        "title": "Freedom House overall score (2025)",
+        "unit": "out of 100",
+        "points": [
+          [
+            "2024 edition",
+            66
+          ],
+          [
+            "2025 edition",
+            63
+          ]
+        ],
+        "source": "https://freedomhouse.org/country/india/freedom-world/2025",
+        "explain": "Freedom House classifies India as Partly Free in its 2025 edition. This is an expert-assessed index, not an objectively measured government performance percentage; editions are labelled, not assumed identical to calendar years."
+      }
+    ]
+  },
+  {
+    "id": "speech",
+    "name": "Press & expression",
+    "icon": "◉",
+    "question": "What is documented about speech and press freedom?",
+    "description": "Court orders, journalist incidents and independent assessments",
+    "metrics": [],
+    "note": "Specific events require independently checked chronology, policing records and response from implicated authorities. An overall numeric verdict is withheld."
+  },
+  {
+    "id": "protests",
+    "name": "Protest & assembly",
+    "icon": "♧",
+    "question": "How have restrictions on assembly been applied?",
+    "description": "Incident documentation and legal outcomes",
+    "metrics": [],
+    "note": "A reliable nationwide incident register and official response review have not yet been compiled."
+  },
+  {
+    "id": "institutions",
+    "name": "Institutional independence",
+    "icon": "▥",
+    "question": "How are oversight institutions functioning?",
+    "description": "Judiciary, commissions and executive accountability",
+    "metrics": [],
+    "note": "Institution-level records need separate criteria; a single mixed score would be misleading."
+  },
+  {
+    "id": "finance",
+    "name": "Political finance & transparency",
+    "icon": "◇",
+    "question": "How transparent is political funding?",
+    "description": "Electoral bonds and related court decisions",
+    "metrics": [],
+    "note": "The Supreme Court struck down the electoral bonds scheme in February 2024. This is a legal finding about that scheme, not a full index of political financing."
+  },
+  {
+    "id": "shutdowns",
+    "name": "Internet restrictions",
+    "icon": "⌁",
+    "question": "How often has internet access been deliberately interrupted?",
+    "description": "Access Now KeepItOn recorded events",
+    "metrics": [
+      {
+        "title": "Recorded internet shutdowns in India",
+        "unit": "incidents",
+        "points": [
+          [
+            "2023",
+            116
+          ],
+          [
+            "2024",
+            84
+          ]
+        ],
+        "source": "https://www.accessnow.org/press-release/keepiton-internet-shutdowns-2024-en/",
+        "explain": "Access Now recorded 116 in 2023 and 84 in 2024. Incident counts are not equivalent to total affected people, geographical area or duration; state and Union authority must be differentiated."
+      }
+    ]
+  }
+]

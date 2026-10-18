@@ -1,0 +1,14 @@
+{
+  "name": "india-accountability-monitor",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Source-linked India accountability research dashboard",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 0.0.0.0 --directory site",
+    "validate": "python3 scripts/validate.py",
+    "test": "npm run validate && playwright test",
+    "build": "npm run validate && python3 scripts/build.py",
+    "research:recompute": "python3 scripts/economy_recompute.py"
+  },
+  "devDependencies": {"@playwright/test": "1.61.1"}
+}

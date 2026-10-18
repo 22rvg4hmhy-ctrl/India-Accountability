@@ -1,0 +1,164 @@
+[
+  {
+    "id": "unemployment",
+    "name": "Unemployment",
+    "icon": "◷",
+    "question": "How did measured unemployment change?",
+    "description": "PLFS usual status, persons 15+, nationwide",
+    "metrics": [
+      {
+        "title": "Unemployment rate",
+        "unit": "%",
+        "points": [
+          [
+            "2017–18",
+            6.0
+          ],
+          [
+            "2018–19",
+            5.8
+          ],
+          [
+            "2019–20",
+            4.8
+          ],
+          [
+            "2020–21",
+            4.2
+          ],
+          [
+            "2021–22",
+            4.1
+          ],
+          [
+            "2022–23",
+            3.2
+          ],
+          [
+            "2023–24",
+            3.2
+          ]
+        ],
+        "source": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2057970&lang=2&reg=48",
+        "explain": "Measured unemployment fell in this PLFS series. This does not measure wage adequacy or underemployment; definitions and survey coverage matter."
+      }
+    ]
+  },
+  {
+    "id": "youth",
+    "name": "Youth employment",
+    "icon": "⌁",
+    "question": "Can young people find good work?",
+    "description": "Graduate employment, school-to-work transition",
+    "metrics": [],
+    "note": "Comparable youth-specific observations and definitions are still undergoing review. No numerical verdict published."
+  },
+  {
+    "id": "wages",
+    "name": "Real wages",
+    "icon": "₹",
+    "question": "Are earnings keeping up with prices?",
+    "description": "Inflation-adjusted earnings by sector",
+    "metrics": [],
+    "note": "Wage growth requires aligned sector, pay-frequency and CPI series. Source review pending."
+  },
+  {
+    "id": "quality",
+    "name": "Job quality",
+    "icon": "▣",
+    "question": "What kinds of jobs are being created?",
+    "description": "Self-employment, formal work and security",
+    "metrics": [],
+    "note": "Employment classification alone does not show job security, benefits or earnings. No consolidated assessment yet."
+  },
+  {
+    "id": "women",
+    "name": "Women in workforce",
+    "icon": "♀",
+    "question": "How has women’s labour participation changed?",
+    "description": "PLFS usual status, women aged 15+",
+    "metrics": [
+      {
+        "title": "Female labour-force participation",
+        "unit": "%",
+        "points": [
+          [
+            "2017–18",
+            23.3
+          ],
+          [
+            "2018–19",
+            24.5
+          ],
+          [
+            "2019–20",
+            30
+          ],
+          [
+            "2020–21",
+            32.5
+          ],
+          [
+            "2021–22",
+            32.8
+          ],
+          [
+            "2022–23",
+            37
+          ],
+          [
+            "2023–24",
+            41.7
+          ]
+        ],
+        "source": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2057970&lang=2&reg=48",
+        "explain": "Participation rose in the PLFS series. Paid work, unpaid household enterprise participation, and quality of employment need separate evaluation."
+      },
+      {
+        "title": "Female worker population ratio",
+        "unit": "%",
+        "points": [
+          [
+            "2017–18",
+            22
+          ],
+          [
+            "2018–19",
+            23.3
+          ],
+          [
+            "2019–20",
+            28.7
+          ],
+          [
+            "2020–21",
+            31.4
+          ],
+          [
+            "2021–22",
+            31.7
+          ],
+          [
+            "2022–23",
+            35.9
+          ],
+          [
+            "2023–24",
+            40.3
+          ]
+        ],
+        "source": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2057970&lang=2&reg=48",
+        "explain": "A higher worker ratio does not establish adequate earnings or causal attribution to a single government."
+      }
+    ]
+  },
+  {
+    "id": "commitments",
+    "name": "Employment commitments",
+    "icon": "✓",
+    "question": "What employment promises were delivered?",
+    "description": "Recruitment, skills and livelihood programmes",
+    "metrics": [],
+    "note": "Original wording, deadlines and independently corroborated outcomes are required. Consult the searchable promise audit for existing records."
+  }
+]

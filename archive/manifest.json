@@ -1,0 +1,142 @@
+[
+  {
+    "file": "India-Accountability-Monitor-v1.8.html",
+    "sha256": "8b5f70a1e1f04657845c682b5babcd034fb69aeadb8acb08f1d6ab4d86964f76",
+    "bytes": 64496
+  },
+  {
+    "file": "employment-indicators.csv",
+    "sha256": "a9a81e3c895b4f14b217730c4d439332dc7b0d47789e42b09bfd23152472f548",
+    "bytes": 5908
+  },
+  {
+    "file": "democracy-indicators.csv",
+    "sha256": "c3bbfbc600b0edfc6105d0b139c12c8d7de5fb1bfbdd1b3814b16c986759b1cb",
+    "bytes": 1576
+  },
+  {
+    "file": "indicator_audit.csv",
+    "sha256": "edaaff987cbacf85240c82fbb277bb865c5cae3295a09b4225bac455ec018216",
+    "bytes": 12455
+  },
+  {
+    "file": "verified_comparisons.csv",
+    "sha256": "427e17d165186a976b60d6111e2038a6a24fa261f32cc8dda89362d5ee0f28bd",
+    "bytes": 1525
+  },
+  {
+    "file": "promises.csv",
+    "sha256": "0b65095878b06adbbc61a6199cc88fcbc8277c689effbd87b8022e00b5ca9954",
+    "bytes": 34886
+  },
+  {
+    "file": "independent_evidence.csv",
+    "sha256": "a4c74f25d6c4212b14cdf9b6dfff2ae13d59c29a58032314d6fe8a349d434c2d",
+    "bytes": 4259
+  },
+  {
+    "file": "economy-evidence.html",
+    "sha256": "2efe4c03252193a7dc17c0372ab72ffa2f770efbe34d948ba82635505a81c9ea",
+    "bytes": 13395
+  },
+  {
+    "file": "README.md",
+    "sha256": "4bd55a835a5ea0665428eccdac90c8cfd8ddc1b950f6c85f5257dcb600782a15",
+    "bytes": 1416
+  },
+  {
+    "file": "verified_comparisons_v13.csv",
+    "sha256": "bc7ee2e95e4cb9998540da160e7f6b13ddc187092821a7e4608ed6f0d736c846",
+    "bytes": 2704
+  },
+  {
+    "file": "independent_evidence_expanded.csv",
+    "sha256": "c221653db07f040aa0b52f2066a87bcb2e04026136bb8e3ffe21d5200b1e4ac7",
+    "bytes": 8239
+  },
+  {
+    "file": "index.html",
+    "sha256": "50fc7a918fd6bcade3900fa5d3da742125607da488c7c84da51ce0e810fe4dd9",
+    "bytes": 101778
+  },
+  {
+    "file": "economy_derived_comparisons.json",
+    "sha256": "71d34fa431b4ae0210c5d0de4328f0f4b617f5d3e26b7c0cf6b83530a1d515d4",
+    "bytes": 465
+  },
+  {
+    "file": "promise_database.csv",
+    "sha256": "0b65095878b06adbbc61a6199cc88fcbc8277c689effbd87b8022e00b5ca9954",
+    "bytes": 34886
+  },
+  {
+    "file": "evidence.csv",
+    "sha256": "6ca8751f11948dd8a48142ea4e5a32585d7a7492143ee020050cf2265f20023c",
+    "bytes": 20376
+  },
+  {
+    "file": "economy_indicator_coverage.csv",
+    "sha256": "8b8a9ba1246b5f99d3164ad519376d26e1df52b6cf362c88f61d158efc0881a1",
+    "bytes": 6543
+  },
+  {
+    "file": "ECONOMY_RESEARCH_COMPLETION_REPORT.md",
+    "sha256": "4b6f0e602d10093597f85b6c2ee421e43f603da6acb22f0e34168beee4ef54b0",
+    "bytes": 5418
+  },
+  {
+    "file": "INDEPENDENT_EVIDENCE_COMPLETION.md",
+    "sha256": "8ff31c769087b6e381370e7736fc265dba771f65694f22973e732231259de0be",
+    "bytes": 1196
+  },
+  {
+    "file": "promise_audit_status.csv",
+    "sha256": "91aeab0b465c56b652b1e0af48af222d4b4890fb1dfb97c499220b6928654019",
+    "bytes": 5278
+  },
+  {
+    "file": "economy_recompute.py",
+    "sha256": "3d64bc546964a79e4d6fe9081b989d4ae7a7863de4b42a7b911b8ebde8089677",
+    "bytes": 927
+  },
+  {
+    "file": "India-Accountability-Monitor-v1.7.html",
+    "sha256": "15f65c23f68f5c07795fd5ac1c91f76fe9a0df4678c280adc3ca34050bf542df",
+    "bytes": 56677
+  },
+  {
+    "file": "legacy_numeric_observations.csv",
+    "sha256": "b422c3ecbb1eee2a6dcb158b728e14cb876f3eb619e9449aa3ea5936a43cead7",
+    "bytes": 11515
+  },
+  {
+    "file": "comparison_protocols.csv",
+    "sha256": "8f74c706b66f92a4e065fee2868cae4a8151813430af0fae080f339a8deabaa7",
+    "bytes": 1210
+  },
+  {
+    "file": "economic_promises_audit.csv",
+    "sha256": "07925df232b521761e5469a1aaaddc3a2d8531d25685e81de4805860641fdb77",
+    "bytes": 12088
+  },
+  {
+    "file": "economy_source_catalogue.csv",
+    "sha256": "4d367758303806e0e4286b8d447aafedf15dd3e53a6f2ca432fd0027618221d5",
+    "bytes": 6176
+  },
+  {
+    "file": "README_MOBILE.md",
+    "sha256": "cc00a0a633161f97e3138e9d4c8e0a6bfdf0ba62c74c8f4a648aeaeb412d95d4",
+    "bytes": 623
+  },
+  {
+    "file": "evidence_matrix.csv",
+    "sha256": "44f554dc5a1f296cfa00365faad8b6086a5bed04990390038269277766d2c631",
+    "bytes": 5155
+  },
+  {
+    "file": "economy_extended_observations.csv",
+    "sha256": "b4fe60c8c0d85fd8dc19549deb947ea42c5c0a6f5efc7df7ac5392ac0ff30a9f",
+    "bytes": 62666
+  }
+]
