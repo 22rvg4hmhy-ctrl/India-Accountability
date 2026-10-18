@@ -1,8 +1,9 @@
 const { defineConfig } = require("@playwright/test");
 module.exports = defineConfig({
   testDir: "./tests",
+  testMatch: "**/*.spec.js",
   use: {
-    baseURL: "http://127.0.0.1:4173",
+    baseURL: process.env.TEST_BASE_URL || "http://127.0.0.1:4173",
     headless: true,
     launchOptions: process.env.CHROMIUM_PATH
       ? { executablePath: process.env.CHROMIUM_PATH }
@@ -20,8 +21,8 @@ module.exports = defineConfig({
     },
   ],
   webServer: {
-    command: "npm run dev",
-    url: "http://127.0.0.1:4173",
-    reuseExistingServer: !process.env.CI,
+    command: process.env.TEST_PRODUCTION ? "npm run preview" : "npm run dev",
+    url: process.env.TEST_BASE_URL || "http://127.0.0.1:4173",
+    reuseExistingServer: false,
   },
 });

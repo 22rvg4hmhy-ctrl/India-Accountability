@@ -1,0 +1,37 @@
+[
+  {
+    "id": "economy",
+    "name": "Economy & Inflation",
+    "icon": "↗",
+    "description": "Economic indicators, prices and fiscal records",
+    "status": "Selected evidence"
+  },
+  {
+    "id": "employment",
+    "name": "Employment & Wages",
+    "icon": "◷",
+    "description": "Employment, work quality and incomes",
+    "status": "Selected evidence"
+  },
+  {
+    "id": "democracy",
+    "name": "Democracy & Civil Liberties",
+    "icon": "⚖",
+    "description": "Institutions, rights and public accountability",
+    "status": "Selected evidence"
+  },
+  {
+    "id": "education",
+    "name": "Education & Healthcare",
+    "icon": "⌘",
+    "description": "Learning, health and public services",
+    "status": "Review pending"
+  },
+  {
+    "id": "digital",
+    "name": "Digital India & Innovation",
+    "icon": "⌁",
+    "description": "Connectivity, technology and digital access",
+    "status": "Review pending"
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "category": "economy",
+    "description": "GDP, real growth, per-person outcomes and the $5tn promise",
+    "id": "growth",
+    "name": "Economic growth",
+    "icon": "↗",
+    "question": "How quickly is the economy growing—and compared with what?"
+  },
+  {
+    "category": "economy",
+    "description": "Headline and food inflation, rural and urban costs",
+    "id": "prices",
+    "name": "Inflation & cost of living",
+    "icon": "◉",
+    "question": "What happened to prices and everyday expenses?"
+  },
+  {
+    "category": "economy",
+    "description": "Consumption and purchasing power, with survey caveats",
+    "id": "households",
+    "name": "Household prosperity",
+    "icon": "⌂",
+    "question": "Does economic expansion translate into better household lives?"
+  },
+  {
+    "category": "economy",
+    "description": "Deficits, central debt, estimates versus actual outcomes",
+    "id": "fiscal",
+    "name": "Government finances",
+    "icon": "▥",
+    "question": "How sustainable are public finances?"
+  },
+  {
+    "category": "economy",
+    "description": "Poverty headcounts, distribution, differing definitions",
+    "id": "poverty",
+    "name": "Poverty & inequality",
+    "icon": "≋",
+    "question": "Who benefited—and who did not?"
+  },
+  {
+    "category": "economy",
+    "description": "Manufacturing share, investment inflows, and the sector mix",
+    "id": "manufacturing",
+    "name": "Manufacturing & investment",
+    "icon": "▧",
+    "question": "Is productive capacity keeping pace with investment?"
+  },
+  {
+    "category": "employment",
+    "id": "unemployment",
+    "name": "Unemployment",
+    "icon": "◷",
+    "question": "How did measured unemployment change?",
+    "description": "PLFS usual status, persons 15+, nationwide"
+  },
+  {
+    "category": "employment",
+    "id": "youth",
+    "name": "Youth employment",
+    "icon": "⌁",
+    "question": "Can young people find good work?",
+    "description": "Graduate employment, school-to-work transition",
+    "note": "Comparable youth-specific observations and definitions are still undergoing review. No numerical verdict published."
+  },
+  {
+    "category": "employment",
+    "id": "wages",
+    "name": "Real wages",
+    "icon": "₹",
+    "question": "Are earnings keeping up with prices?",
+    "description": "Inflation-adjusted earnings by sector",
+    "note": "Wage growth requires aligned sector, pay-frequency and CPI series. Source review pending."
+  },
+  {
+    "category": "employment",
+    "id": "quality",
+    "name": "Job quality",
+    "icon": "▣",
+    "question": "What kinds of jobs are being created?",
+    "description": "Self-employment, formal work and security",
+    "note": "Employment classification alone does not show job security, benefits or earnings. No consolidated assessment yet."
+  },
+  {
+    "category": "employment",
+    "id": "women",
+    "name": "Women in workforce",
+    "icon": "♀",
+    "question": "How has women’s labour participation changed?",
+    "description": "PLFS usual status, women aged 15+"
+  },
+  {
+    "category": "employment",
+    "id": "commitments",
+    "name": "Employment commitments",
+    "icon": "✓",
+    "question": "What employment promises were delivered?",
+    "description": "Recruitment, skills and livelihood programmes",
+    "note": "Original wording, deadlines and independently corroborated outcomes are required. Consult the searchable promise audit for existing records."
+  },
+  {
+    "category": "democracy",
+    "id": "rights",
+    "name": "Political rights & civil liberties",
+    "icon": "⚖",
+    "question": "How do published rights assessments describe India?",
+    "description": "External indices with methodology notes"
+  },
+  {
+    "category": "democracy",
+    "id": "speech",
+    "name": "Press & expression",
+    "icon": "◉",
+    "question": "What is documented about speech and press freedom?",
+    "description": "Court orders, journalist incidents and independent assessments",
+    "note": "Specific events require independently checked chronology, policing records and response from implicated authorities. An overall numeric verdict is withheld."
+  },
+  {
+    "category": "democracy",
+    "id": "protests",
+    "name": "Protest & assembly",
+    "icon": "♧",
+    "question": "How have restrictions on assembly been applied?",
+    "description": "Incident documentation and legal outcomes",
+    "note": "A reliable nationwide incident register and official response review have not yet been compiled."
+  },
+  {
+    "category": "democracy",
+    "id": "institutions",
+    "name": "Institutional independence",
+    "icon": "▥",
+    "question": "How are oversight institutions functioning?",
+    "description": "Judiciary, commissions and executive accountability",
+    "note": "Institution-level records need separate criteria; a single mixed score would be misleading."
+  },
+  {
+    "category": "democracy",
+    "id": "finance",
+    "name": "Political finance & transparency",
+    "icon": "◇",
+    "question": "How transparent is political funding?",
+    "description": "Electoral bonds and related court decisions",
+    "note": "The Supreme Court struck down the electoral bonds scheme in February 2024. This is a legal finding about that scheme, not a full index of political financing."
+  },
+  {
+    "category": "democracy",
+    "id": "shutdowns",
+    "name": "Internet restrictions",
+    "icon": "⌁",
+    "question": "How often has internet access been deliberately interrupted?",
+    "description": "Access Now KeepItOn recorded events"
+  }
+]

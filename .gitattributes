@@ -1,0 +1,4 @@
+# Historical copies are preserved evidence, not active application source.
+archive/** linguist-vendored=true
+public/research-archive.html linguist-vendored=true
+docs/retired-jekyll-workflow.yml linguist-vendored=true

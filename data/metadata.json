@@ -1,0 +1,17 @@
+{
+  "asOf": "2026-10-18",
+  "scope": "India, Union-accountability focus; figures can include state and other contributors.",
+  "migrationVersion": "3.0.0",
+  "peerSnapshot": {
+    "date": "2025",
+    "indicator": "GDP (current US$)",
+    "unit": "US$ trillion",
+    "countries": [
+      ["India", 3.956],
+      ["Indonesia", 1.446],
+      ["Viet Nam", 0.515]
+    ],
+    "caveat": "These are scale comparisons, not causal or welfare benchmarks: populations and income levels differ markedly.",
+    "sources": ["wbGDP", "wbPeer"]
+  }
+}

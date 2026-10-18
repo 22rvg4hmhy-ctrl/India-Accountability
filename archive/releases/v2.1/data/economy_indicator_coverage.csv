@@ -1,0 +1,38 @@
+indicator_id,subcategory,definition,data_status,linked_series,important_limitation,expected_source
+EC-GROWTH-01,Economic growth,Real GDP growth,WITH_REFERENCED_OBSERVATIONS,wdi-gdp-growth,Pin release vintage and methodology; display breaks,MoSPI national accounts; IMF WEO
+EC-GROWTH-02,Economic growth,"GDP per capita, real",WITH_REFERENCED_OBSERVATIONS,real-gdp-per-capita,Pin release vintage and methodology; display breaks,MoSPI; World Bank WDI
+EC-GROWTH-03,Economic growth,Nominal GDP in USD,POST_2014_OR_SNAPSHOT_ONLY,nominal-gdp,Pin release vintage and methodology; display breaks,MoSPI; RBI exchange rates; IMF WEO
+EC-GROWTH-04,Economic growth,Gross fixed capital formation,NOT_YET_VERIFIED,,Pin release vintage and methodology; display breaks,MoSPI national accounts
+EC-GROWTH-05,Economic growth,Private final consumption growth,NOT_YET_VERIFIED,,Pin release vintage and methodology; display breaks,MoSPI national accounts
+EC-GROWTH-06,Economic growth,Sectoral GVA share,NOT_YET_VERIFIED,,Pin release vintage and methodology; display breaks,MoSPI national accounts
+EC-PRICES-01,Inflation and cost of living,Headline CPI inflation,WITH_REFERENCED_OBSERVATIONS,wdi-inflation-annual,Pin release vintage and methodology; display breaks,MoSPI CPI
+EC-PRICES-02,Inflation and cost of living,Food CPI inflation,POST_2014_OR_SNAPSHOT_ONLY,cpi-food,Pin release vintage and methodology; display breaks,MoSPI CPI
+EC-PRICES-03,Inflation and cost of living,Cumulative CPI change,WITH_REFERENCED_OBSERVATIONS,cost-basket-index,Pin release vintage and methodology; display breaks,"MoSPI CPI, with rebasing notes"
+EC-PRICES-04,Inflation and cost of living,Rural vs urban CPI inflation,POST_2014_OR_SNAPSHOT_ONLY,cpi-ruralurban,Pin release vintage and methodology; display breaks,MoSPI CPI
+EC-PRICES-05,Inflation and cost of living,Essential item prices,NOT_YET_VERIFIED,,Pin release vintage and methodology; display breaks,Consumer Affairs price monitoring; MoSPI item CPI
+EC-PRICES-06,Inflation and cost of living,Real purchasing-power proxy,NOT_YET_VERIFIED,,Pin release vintage and methodology; display breaks,MoSPI HCES; CPI
+EC-HOUSEHOLD-01,Household prosperity,Real MPCE rural,WITH_REFERENCED_OBSERVATIONS,hces-rural,Pin release vintage and methodology; display breaks,MoSPI HCES
+EC-HOUSEHOLD-02,Household prosperity,Real MPCE urban,WITH_REFERENCED_OBSERVATIONS,hces-urban,Pin release vintage and methodology; display breaks,MoSPI HCES
+EC-HOUSEHOLD-03,Household prosperity,Consumption distribution by fractile,NOT_YET_VERIFIED,,Pin release vintage and methodology; display breaks,MoSPI HCES
+EC-HOUSEHOLD-04,Household prosperity,Household financial savings,WITH_REFERENCED_OBSERVATIONS,household-financial-saving,Pin release vintage and methodology; display breaks,RBI; MoSPI
+EC-HOUSEHOLD-05,Household prosperity,Household financial liabilities,WITH_REFERENCED_OBSERVATIONS,household-financial-liabilities,Pin release vintage and methodology; display breaks,RBI; MoSPI
+EC-HOUSEHOLD-06,Household prosperity,Urban-rural consumption gap,WITH_REFERENCED_OBSERVATIONS,urban-rural-consumption-gap,Pin release vintage and methodology; display breaks,MoSPI HCES
+EC-FISCAL-01,Government finances,Union fiscal deficit,WITH_REFERENCED_OBSERVATIONS,rbi-fiscal-long,Pin release vintage and methodology; display breaks,Union Budget actuals; CAG
+EC-FISCAL-02,Government finances,Union debt,WITH_REFERENCED_OBSERVATIONS,rbi-debt-long,Pin release vintage and methodology; display breaks,Union Budget; RBI
+EC-FISCAL-03,Government finances,General government debt,POST_2014_OR_SNAPSHOT_ONLY,imf-general-debt,Pin release vintage and methodology; display breaks,IMF WEO; RBI
+EC-FISCAL-04,Government finances,Interest burden,POST_2014_OR_SNAPSHOT_ONLY,interest-burden,Pin release vintage and methodology; display breaks,Union Budget actuals
+EC-FISCAL-05,Government finances,Tax revenue,POST_2014_OR_SNAPSHOT_ONLY,central-gross-tax-ratio,Pin release vintage and methodology; display breaks,Union Budget; RBI
+EC-FISCAL-06,Government finances,Capital expenditure,POST_2014_OR_SNAPSHOT_ONLY,union-capex-gdp,Pin release vintage and methodology; display breaks,Union Budget actuals
+EC-POVERTY-01,Poverty and inequality,International poverty headcount $3/day 2021 PPP,WITH_REFERENCED_OBSERVATIONS,wb-poverty-2024,Pin release vintage and methodology; display breaks,World Bank PIP
+EC-POVERTY-02,Poverty and inequality,International poverty headcount $4.20/day 2021 PPP,WITH_REFERENCED_OBSERVATIONS,wb-moderate-poverty-2024,Pin release vintage and methodology; display breaks,World Bank PIP
+EC-POVERTY-03,Poverty and inequality,Consumption Gini,WITH_REFERENCED_OBSERVATIONS,consumption-gini,Pin release vintage and methodology; display breaks,MoSPI HCES; World Bank PIP
+EC-POVERTY-04,Poverty and inequality,Rural poverty rate,WITH_REFERENCED_OBSERVATIONS,wb-poverty-rural-2024,Pin release vintage and methodology; display breaks,World Bank PIP
+EC-POVERTY-05,Poverty and inequality,Urban poverty rate,WITH_REFERENCED_OBSERVATIONS,wb-poverty-urban-2024,Pin release vintage and methodology; display breaks,World Bank PIP
+EC-POVERTY-06,Poverty and inequality,Bottom-quintile consumption share,NOT_YET_VERIFIED,,Pin release vintage and methodology; display breaks,MoSPI HCES microdata
+EC-MANUFACTURE-01,Manufacturing and investment,Manufacturing GVA share,POST_2014_OR_SNAPSHOT_ONLY,manufacturing-share,Pin release vintage and methodology; display breaks,MoSPI national accounts
+EC-MANUFACTURE-02,Manufacturing and investment,Manufacturing real GVA growth,POST_2014_OR_SNAPSHOT_ONLY,manufacturing-real-gva-growth,Pin release vintage and methodology; display breaks,MoSPI national accounts
+EC-MANUFACTURE-03,Manufacturing and investment,Gross FDI inflows,POST_2014_OR_SNAPSHOT_ONLY,gross-fdi,Pin release vintage and methodology; display breaks,RBI; DPIIT
+EC-MANUFACTURE-04,Manufacturing and investment,Net FDI flows,NOT_YET_VERIFIED,,Pin release vintage and methodology; display breaks,RBI balance of payments
+EC-MANUFACTURE-05,Manufacturing and investment,Merchandise exports,POST_2014_OR_SNAPSHOT_ONLY,merchandise-exports,Pin release vintage and methodology; display breaks,Commerce TRADESTAT
+EC-MANUFACTURE-06,Manufacturing and investment,Merchandise trade deficit,POST_2014_OR_SNAPSHOT_ONLY,merchandise-trade-deficit,Pin release vintage and methodology; display breaks,Commerce TRADESTAT
+EC-MANUFACTURE-07,Manufacturing and investment,Industrial production index,NOT_YET_VERIFIED,,Pin release vintage and methodology; display breaks,MoSPI IIP

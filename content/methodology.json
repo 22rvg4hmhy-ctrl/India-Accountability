@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Verify the exact promise",
+    "body": "Identify the original source, date, responsibility, units, deadline and whether wording is verbatim or paraphrased. Preserve review status when verification remains incomplete."
+  },
+  {
+    "title": "Separate promises from outcomes",
+    "body": "A fulfilled policy announcement is not necessarily a fulfilled outcome. Assess measurable changes separately. Unknown evidence must not be counted as a missed promise."
+  },
+  {
+    "title": "Compare like with like",
+    "body": "Check denominators, currency, inflation adjustments, statistical base years, survey methods and publication vintage. Do not splice incompatible series. Calendar years, financial years and index editions retain their original labels."
+  },
+  {
+    "title": "Include supporting and challenging evidence",
+    "body": "Read official releases alongside independent research. Explain methodological differences and unresolved discrepancies rather than averaging incompatible estimates."
+  },
+  {
+    "title": "Explain uncertainty and attribution",
+    "body": "National changes can reflect earlier programmes, state governments, private action and global conditions. Descriptive changes and pre/post averages do not establish causation."
+  },
+  {
+    "title": "Make results reproducible",
+    "body": "The website generates charts, observation tables and JSON downloads from shared research inputs. Comparison functions are tested against the supplied reference calculations. No overall government score is inferred from the selected sample."
+  }
+]
